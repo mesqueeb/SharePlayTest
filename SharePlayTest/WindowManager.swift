@@ -36,7 +36,11 @@ import SwiftUI
     let saveId = session.activity.saveId
     let file = session.activity.file
     print("[onFoundSession] saveId: \(saveId.uuidString) file: \(file)")
+
     prepareSharePlay(saveId: saveId, file: file, session: session)
+
+    register.openWindows[ViewId.Volume] = true
+    register.activeSaveId = saveId
     openWindow(id: ViewId.Volume.rawValue)
   }
 
