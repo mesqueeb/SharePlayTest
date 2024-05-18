@@ -101,7 +101,7 @@ import SwiftUI
     }
   }
 
-  public static func startApp(
+  public static func startSharePlaySessionListener(
     openWindow: OpenWindowAction,
     openImmersiveSpace: OpenImmersiveSpaceAction,
     dismissWindow: DismissWindowAction,

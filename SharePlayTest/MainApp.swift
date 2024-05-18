@@ -12,7 +12,7 @@ struct MainApp: App {
   @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
 
   @MainActor init() {
-    WindowManager.startApp(
+    WindowManager.startSharePlaySessionListener(
       openWindow: openWindow,
       openImmersiveSpace: openImmersiveSpace,
       dismissWindow: dismissWindow,
